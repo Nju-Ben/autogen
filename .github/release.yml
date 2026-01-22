@@ -1,13 +1,13 @@
-# .github/release.yml
-
-changelog:
-  categories:
-    - title: 🏕 Features
-      labels:
-        - '*'
-      exclude:
-        labels:
-          - dependencies
-    - title: 👒 Dependencies
-      labels:
-        - dependencies
+name-template: v${{ version }}
+tag-name: v${{ version }}
+categories:
+  - title: "✨ 核心改进"
+    labels: [ "feat", "core" ]
+  - title: "🐞 修复"
+    labels: [ "fix", "security" ]
+  - title: "🔧 Under the Hood"
+    labels: [ "refactor", "perf", "internal" ]
+  - title: "⚠️ 注意"
+    labels: [ "breaking", "security" ]
+exclude:
+  labels: [ "docs", "chore", "ci", "test" ]
