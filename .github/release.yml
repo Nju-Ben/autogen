@@ -1,13 +1,22 @@
 name-template: v${{ version }}
 tag-name: v${{ version }}
 categories:
-  - title: "✨ 核心改进"
-    labels: [ "feat", "core" ]
-  - title: "🐞 修复"
-    labels: [ "fix", "security" ]
-  - title: "🔧 Under the Hood"
-    labels: [ "refactor", "perf", "internal" ]
-  - title: "⚠️ 注意"
-    labels: [ "breaking", "security" ]
+  - title: "🔥 What's New"
+    labels: [ "feat", "fix", "perf", "security" ]
+  - title: "📚 Upgrade Guide"
+    labels: [ "breaking", "migration" ]
+  - title: "📦 What's Changed"
+    subsections:
+      - title: "✨ New Features"
+        labels: [ "feat" ]
+      - title: "🐞 Bug Fixes"
+        labels: [ "fix", "security" ]
+      - title: "🔧 Under the Hood"
+        labels: [ "perf", "refactor", "internal" ]
+  - title: "🤝 New Contributors"
+    show-contributors: true
+    only-new: true
+  - title: "🧑‍🤝‍🧑 Contributors"
+    show-contributors: true
 exclude:
   labels: [ "docs", "chore", "ci", "test" ]
